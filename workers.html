@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>صفحة العمال</title>
-    <link rel="stylesheet" href="style.css">
+    <title>صفحة العامل</title>
 </head>
 <body>
-    <h1>صفحة العمال</h1>
-    <div id="workerMessage">لم يتم استلام أي رسالة بعد.</div>
+    <h1>مرحبًا، أنت عامل هنا</h1>
+    <button onclick="logout()">تسجيل الخروج</button>
+    <h2>قائمة المهام</h2>
+    <ul id="task-list"></ul>
     <script src="firebase-config.js"></script>
-    <script src="script.js"></script>
+    <script src="worker.js"></script>
 </body>
 </html>

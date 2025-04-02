@@ -8,8 +8,12 @@
 </head>
 <body>
     <h1>إنشاء حساب مشرف</h1>
-    <input type="email" id="email" placeholder="البريد الإلكتروني"><br>
-    <input type="password" id="password" placeholder="كلمة المرور"><br>
+    <input type="email" id="email" placeholder="البريد الإلكتروني" required><br>
+    <input type="password" id="password" placeholder="كلمة المرور" required><br>
+    <select id="role">
+        <option value="admin">مشرف</option>
+        <option value="worker">عامل</option>
+    </select><br>
     <button onclick="register()">إنشاء حساب</button>
     <div id="error-message" style="color: red;"></div>
 
